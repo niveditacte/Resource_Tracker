@@ -1,0 +1,91 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <!-- <label for="empId">EMP ID<span class="required-field">*</span></label>
+  <input type="text" formControlName="empId" placeholder="Ex.E2454"> -->
+  <!-- Resource Name -->
+  <label for="resource_Name">Resource Name<span class="required-field">*</span></label>
+  <input type="text" formControlName="resource_Name" placeholder="Give full name">
+  <span class="validation-message"
+    *ngIf="myForm.get('resource_Name')?.hasError('required') && (myForm.get('resource_Name')?.touched || myForm.get('resource_Name')?.dirty)">
+    Resource name is required.
+  </span>
+  
+
+  <!-- Designation -->
+  <label for="designation">Designation<span class="required-field">*</span></label>
+  <input type="text" formControlName="designation" placeholder="Ex.Trainee, Developer">
+  <span class="validation-message"
+    *ngIf="myForm.get('designation')?.hasError('required') && (myForm.get('designation')?.touched || myForm.get('designation')?.dirty)">
+    Designation is required.
+  </span>
+
+  <!-- Reporting To -->
+  <label for="reportingTo">Reporting To<span class="required-field">*</span></label>
+  <input type="text" formControlName="reportingTo" placeholder="Manager/Supervisor Name">
+  <span class="validation-message"
+    *ngIf="myForm.get('reportingTo')?.hasError('required') && (myForm.get('reportingTo')?.touched || myForm.get('reportingTo')?.dirty)">
+    Reporting manager name is required.
+  </span>
+  
+
+  <!-- Billable -->
+  <label for="billable">Billable<span class="required-field">*</span></label>
+  <select formControlName="billable">
+    <option value="" disabled selected>Select Billable status</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+  <span class="validation-message"
+    *ngIf="myForm.get('billable')?.hasError('required') && (myForm.get('billable')?.touched || myForm.get('billable')?.dirty)">
+    Billable status is required.
+  </span>
+
+  <!-- Technology Skill -->
+  <label for="technology_Skill">Technology/Skill<span class="required-field">*</span></label>
+  <input type="text" formControlName="technology_Skill" placeholder="Write about your skills">
+  <span class="validation-message"
+    *ngIf="myForm.get('technology_Skill')?.hasError('required') && (myForm.get('technology_Skill')?.touched || myForm.get('technology_Skill')?.dirty)">
+    Technology/Skill is required.
+  </span>
+
+  <!-- Project Allocation -->
+  <label for="project_Allocate">Project Allocation<span class="required-field">*</span></label>
+  <input type="text" formControlName="project_Allocate" placeholder="Name the current assigned Project">
+  <span class="validation-message"
+    *ngIf="myForm.get('project_Allocate')?.hasError('required') && (myForm.get('project_Allocate')?.touched || myForm.get('project_Allocate')?.dirty)">
+    Project Allocation is required.
+  </span>
+
+  <!-- Location -->
+  <label for="location">Location<span class="required-field">*</span></label>
+  <input type="text" formControlName="location" placeholder="Current working location">
+  <span class="validation-message"
+    *ngIf="myForm.get('location')?.hasError('required') && (myForm.get('location')?.touched || myForm.get('location')?.dirty)">
+    Location is required.
+  </span>
+
+  <!-- Email Id -->
+  <label for="emailId">Email Id<span class="required-field">*</span></label>
+  <input type="text" formControlName="emailId" placeholder="Write your Email here">
+  <span class="validation-message"
+    *ngIf="myForm.get('emailId')?.hasError('required') && (myForm.get('emailId')?.touched || myForm.get('emailId')?.dirty)">
+    Email is required.
+  </span>
+  <span class="validation-message"
+    *ngIf="myForm.get('emailId')?.hasError('email') && (myForm.get('emailId')?.touched || myForm.get('emailId')?.dirty)">
+    Enter a valid email.
+  </span>
+
+  <!-- CTE_DOJ -->
+  <label for="ctE_DOJ">CTE_DOJ<span class="required-field">*</span></label>
+  <input type="date" formControlName="ctE_DOJ" placeholder="Date of Joining">
+  <span class="validation-message"
+    *ngIf="myForm.get('ctE_DOJ')?.hasError('required') && (myForm.get('ctE_DOJ')?.touched || myForm.get('ctE_DOJ')?.dirty)">
+    Date of joining is required.
+  </span>
+
+  <label for="remarks">Remarks</label>
+  <input type="text" formControlName="remarks" placeholder="Write your remarks here...">
+
+  <button type="submit" [disabled]="!myForm.valid">Submit</button>
+
+</form>

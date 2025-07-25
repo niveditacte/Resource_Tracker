@@ -1,0 +1,155 @@
+// Dialog container styles
+::ng-deep kendo-dialog {
+  p {
+    font-size: 1rem;
+    margin: 16px 0;
+    color: #333;
+  }
+
+  kendo-dialog-titlebar {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+    background-color: #f8f8f8;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  kendo-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+
+    .k-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      margin-left: 8px;
+      border: none;
+      border-radius: 4px;
+      background-color: #e0e0e0;
+      color: #000;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #c7c7c7;
+      }
+
+      &.k-primary {
+        background-color: #d32f2f;
+        color: #fff;
+
+        &:hover {
+          background-color: #b71c1c;
+        }
+      }
+    }
+  }
+}
+.export-btn {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.export-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+// /* Container table styling */
+// table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     margin: 20px auto;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+//     overflow: hidden;
+//     border-radius: 8px;
+// }
+
+// /* Table head style */
+// thead {
+//     background-color: #3f51b5;
+//     color: white;
+//     text-align: left;
+// }
+
+// thead td {
+//     padding: 12px 16px;
+//     font-weight: bold;
+//     font-size: 14px;
+//     letter-spacing: 0.5px;
+// }
+
+// /* Table body styling */
+// tbody tr {
+//     border-bottom: 1px solid #e0e0e0;
+//     transition: background-color 0.3s ease;
+// }
+
+// tbody tr:hover {
+//     background-color: #f5f5f5;
+// }
+
+// tbody td {
+//     padding: 12px 16px;
+//     font-size: 14px;
+//     color: #333;
+// }
+
+// /* Button styling */
+// .show-button {
+//     padding: 6px 12px;
+//     background-color: #4caf50;
+//     border: none;
+//     border-radius: 4px;
+//     color: white;
+//     font-size: 13px;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+// }
+
+// .show-button:hover {
+//     background-color: #43a047;
+// }
+// .edit-button {
+//     padding: 6px 12px;
+//     background-color: #4caf50;
+//     border: none;
+//     border-radius: 4px;
+//     color: white;
+//     font-size: 13px;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+// }
+
+// .edit-button:hover {
+//     background-color: #43a047;
+// }
+// /* Button styling */
+// .delete-button {
+//     padding: 6px 12px;
+//     background-color: #4caf50;
+//     border: none;
+//     border-radius: 4px;
+//     color: white;
+//     font-size: 13px;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+// }
+
+// .delete-button:hover {
+//     background-color: #43a047;
+// }
+
+

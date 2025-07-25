@@ -1,0 +1,32 @@
+<!-- <h2>RESOURCE TRACKER APPLICATION</h2>
+
+<div>
+    <button kendoButton (click)="NavigateTab('/Home')">Home</button>
+
+    <button kendoButton (click)="NavigateTab('/Add-Edit')">Add Resource</button>
+</div> -->
+<div class="header-container">
+    <h2 class="app-title">Resource Tracker App</h2>
+    <br>
+    <p class="tagline">Manage your resources with clarity and control.</p>
+    
+
+    <div class="button-group">
+        <button kendoButton look="outline" themeColor="primary" (click)="NavigateTab('/Home')">
+            <mat-icon style="vertical-align: middle; margin-right: 6px;">home</mat-icon>Home
+        </button>
+        <button kendoButton look="outline" themeColor="primary" (click)="NavigateTab('/Add-Edit')">
+             <mat-icon style="vertical-align: middle; margin-right: 6px;">add</mat-icon>Add Resource
+        </button>
+    </div>
+   
+</div>
+<!-- <div style="position: absolute; top: 1rem; right: 2rem;">
+  <label>
+    <input type="checkbox" [checked]="isDarkMode" (change)="toggleTheme()" />
+    {{ isDarkMode ? '🌙 Dark' : '☀️ Light' }} Mode
+  </label>
+</div> -->
+
+
+<router-outlet></router-outlet>
